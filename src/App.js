@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
-import logo from "./custom/img/logo.png";
-import avatar from "./custom/img/avatars/avatar.jpg";
+import logo from "./img/logo.png";
+import avatar from "./img/avatars/avatar.jpg";
 
 class App extends React.Component {
   render() {
@@ -188,7 +188,6 @@ class App extends React.Component {
                 <a class="sidebar-toggle">
                   <i class="hamburger align-self-center"></i>
                 </a>
-                <span class="navbar-brand">Revenue Payments</span>
                 <form class="d-none d-sm-inline-block">
                   <div class="input-group input-group-navbar">
                     <input
@@ -253,15 +252,18 @@ class App extends React.Component {
                       <div class="card">
                         <div class="card-header">
                           <div class="row">
-                            <div class="col-6 text-left">
-                              <a class="text-light text-left" href="#">
+                            <div class="col-4 text-left">
+                            <a class="text-light text-left" href="#">
                                 <i class="align-middle" data-feather="plus"></i>{" "}
                                 <span class="align-middle">
                                   Add Revenue Payment
                                 </span>
                               </a>
                             </div>
-                            <div class="col-6 text-right">
+                            <div class="col-4 text-center">
+                            <span class="align-middle text-light h2">Revenue Payments</span>
+                            </div>
+                            <div class="col-4 text-right">
                               <a class="text-light text-right" href="#">
                                 <i
                                   class="align-middle"
@@ -275,6 +277,7 @@ class App extends React.Component {
                           <table
                             id="datatables-reponsive"
                             class="table table-striped table-hover"
+                            style={{width: "100%"}}
                           >
                             <thead>
                               <tr>
