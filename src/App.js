@@ -4,6 +4,10 @@ import logo from "./img/logo.png";
 import avatar from "./img/avatars/avatar.jpg";
 
 class App extends React.Component {
+  componentDidMount() {
+    document.title = "Revenue Payments | Land On Demand";
+  }
+
   render() {
     return (
       <div className="App">
@@ -214,9 +218,9 @@ class App extends React.Component {
                         <img
                           src={avatar}
                           class="avatar img-fluid rounded-circle mr-1"
-                          alt="Jerome Bell"
+                          alt="Chris Wood"
                         />{" "}
-                        <span class="text-dark">Jerome Bell</span>
+                        <span class="text-dark">Chris Wood</span>
                       </a>
                       <div class="dropdown-menu dropdown-menu-right">
                         <a class="dropdown-item" href="pages-profile.html">
@@ -253,7 +257,7 @@ class App extends React.Component {
                         <div class="card-header">
                           <div class="row">
                             <div class="col-4 text-left">
-                            <a class="text-light text-left" href="#">
+                              <a class="text-light text-left" href="#">
                                 <i class="align-middle" data-feather="plus"></i>{" "}
                                 <span class="align-middle">
                                   Add Revenue Payment
@@ -261,7 +265,9 @@ class App extends React.Component {
                               </a>
                             </div>
                             <div class="col-4 text-center">
-                            <span class="align-middle text-light h2">Revenue Payments</span>
+                              <span class="align-middle text-light h2">
+                                Revenue Payments
+                              </span>
                             </div>
                             <div class="col-4 text-right">
                               <a class="text-light text-right" href="#">
@@ -277,7 +283,7 @@ class App extends React.Component {
                           <table
                             id="datatables-reponsive"
                             class="table table-striped table-hover"
-                            style={{width: "100%"}}
+                            style={{ width: "100%" }}
                           >
                             <thead>
                               <tr>
